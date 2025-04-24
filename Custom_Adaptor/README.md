@@ -28,4 +28,4 @@ https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typesc
 You can also refer the below resources to know more details about Syncfusion Typescript Grid components.
 
 * [Demo](https://ej2.syncfusion.com/demos/#/bootstrap/grid/over-view)
-* [Documentation](https://ej2.syncfusion.com/documentation/grid/getting-started)
+* [Documentation](https://ej2.syncfusion.com/documentation/grid/getting-started) 
