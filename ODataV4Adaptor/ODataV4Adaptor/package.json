@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@syncfusion/ej2-data": "^26.1.35",
-    "@syncfusion/ej2-grids": "^26.1.38",
-    "@types/node": "^20.14.5"
+    "@syncfusion/ej2-data": "*",
+    "@syncfusion/ej2-grids": "*",
+    "@types/node": "*"
   },
   "devDependencies": {
     "clean-webpack-plugin": "4.0.0",
