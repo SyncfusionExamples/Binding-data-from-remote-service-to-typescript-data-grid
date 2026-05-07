@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@syncfusion/ej2": "*",
-    "@syncfusion/ej2-data": "^26.1.35",
-    "@syncfusion/ej2-grids": "^26.1.35"
+    "@syncfusion/ej2-data": "*",
+    "@syncfusion/ej2-grids": "*"
   }
 }

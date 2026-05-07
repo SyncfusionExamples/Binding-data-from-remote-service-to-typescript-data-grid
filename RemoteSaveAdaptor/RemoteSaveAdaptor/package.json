@@ -13,8 +13,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "@syncfusion/ej2-data": "^26.1.35",
-    "@syncfusion/ej2-grids": "^26.1.35",
+    "@syncfusion/ej2-data": "*",
+    "@syncfusion/ej2-grids": "*",
     "@types/node": "^20.14.5",
     "acorn": "^8.12.0",
     "acorn-import-attributes": "^1.9.5",

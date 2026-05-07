@@ -13,8 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "4.0.0",
-    "@syncfusion/ej2-data": "^26.1.35",
-    "@syncfusion/ej2-grids": "^26.1.38",
+    "@syncfusion/ej2-data": "*",
+    "@syncfusion/ej2-grids": "*",
     "css-loader": "7.1.2",
     "html-webpack-plugin": "5.6.3",
     "mini-css-extract-plugin": "2.9.2",
