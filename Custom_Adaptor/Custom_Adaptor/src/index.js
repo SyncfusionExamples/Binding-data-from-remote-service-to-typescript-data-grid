@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ej2_grids_1 = require("@syncfusion/ej2-grids");
-var ej2_data_1 = require("@syncfusion/ej2-data");
-var CustomAdaptor_1 = require("./CustomAdaptor");
-var data = new ej2_data_1.DataManager({
+const ej2_grids_1 = require("@syncfusion/ej2-grids");
+const ej2_data_1 = require("@syncfusion/ej2-data");
+const CustomAdaptor_1 = require("./CustomAdaptor");
+let data = new ej2_data_1.DataManager({
     url: 'https://localhost:7048/odata/Orders',
     adaptor: new CustomAdaptor_1.CustomAdaptor(),
     crossDomain: true,
 });
 ej2_grids_1.Grid.Inject(ej2_grids_1.Page, ej2_grids_1.Sort, ej2_grids_1.Filter, ej2_grids_1.Edit, ej2_grids_1.Toolbar);
-var grid = new ej2_grids_1.Grid({
+let grid = new ej2_grids_1.Grid({
     dataSource: data,
     allowPaging: true,
     allowSorting: true,

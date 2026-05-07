@@ -1,18 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ej2_grids_1 = require("@syncfusion/ej2-grids");
-var ej2_data_1 = require("@syncfusion/ej2-data");
+const ej2_grids_1 = require("@syncfusion/ej2-grids");
+const ej2_data_1 = require("@syncfusion/ej2-data");
 ej2_grids_1.Grid.Inject(ej2_grids_1.Edit, ej2_grids_1.Toolbar, ej2_grids_1.Sort, ej2_grids_1.Filter, ej2_grids_1.Page);
-var data;
+let data;
 function load() {
     fetch('https://localhost:7259/api/Orders')
-        .then(function (response) {
+        .then(response => {
         if (!response.ok) {
-            throw new Error("Unable to Fetch Data. Please check URL or network connectivity.");
+            throw new Error(`Unable to Fetch Data. Please check URL or network connectivity.`);
         }
         return response.json();
     })
-        .then(function (jsonValue) {
+        .then(jsonValue => {
         data = new ej2_data_1.DataManager({
             json: jsonValue,
             insertUrl: 'https://localhost:7259/api/Orders/Insert',
@@ -24,7 +24,7 @@ function load() {
     });
 }
 function createGrid() {
-    var grid = new ej2_grids_1.Grid({
+    let grid = new ej2_grids_1.Grid({
         dataSource: data,
         allowPaging: true,
         allowFiltering: true,
