@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var ej2_grids_1 = require("@syncfusion/ej2-grids");
-var ej2_data_1 = require("@syncfusion/ej2-data");
+const ej2_grids_1 = require("@syncfusion/ej2-grids");
+const ej2_data_1 = require("@syncfusion/ej2-data");
 ej2_grids_1.Grid.Inject(ej2_grids_1.Edit, ej2_grids_1.Toolbar, ej2_grids_1.Filter, ej2_grids_1.Sort, ej2_grids_1.Page);
-var data = new ej2_data_1.DataManager({
+let data = new ej2_data_1.DataManager({
     url: 'https://localhost:7233/api/Grid',
     insertUrl: 'https://localhost:7233/api/Grid/Insert',
     updateUrl: 'https://localhost:7233/api/Grid/Update',
     removeUrl: 'https://localhost:7233/api/Grid/Remove',
     adaptor: new ej2_data_1.UrlAdaptor()
 });
-var grid = new ej2_grids_1.Grid({
+let grid = new ej2_grids_1.Grid({
     dataSource: data,
     toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'],
     allowPaging: true,
