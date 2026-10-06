@@ -34,7 +34,7 @@ namespace WebMethodAdaptor.Server.Controllers
             // Perform filtering operation if filtering is provided
             if (dataManagerParams.Where != null && dataManagerParams.Where.Count > 0)
             {
-                DataSource = queryableOperation.PerformFiltering(DataSource, dataManagerParams.Where, dataManagerParams.Where[0].Operator);
+                DataSource = queryableOperation.PerformFiltering(DataSource, dataManagerParams.Where, dataManagerParams.Where[0].Condition);
             }
 
             // Perform search operation if search is provided
